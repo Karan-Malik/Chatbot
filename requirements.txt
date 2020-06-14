@@ -65,4 +65,5 @@ pycricbuzz==2.4
 billboard.py==6.1.0
 pygame==1.9.6
 COVID19Py==0.3.0
+gunicorn==19.9.0
 
