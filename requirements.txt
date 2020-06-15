@@ -10,4 +10,5 @@ pygame==1.9.6
 COVID19Py==0.3.0
 gunicorn==19.9.0
 billboard.py
+pytz==2019.3
 https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow_cpu-2.2.0-cp36-cp36m-manylinux2010_x86_64.whl

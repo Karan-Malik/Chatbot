@@ -9,7 +9,8 @@ import json
 import numpy as np
 from keras.models import Sequential,load_model
 import random
-import datetime
+from datetime import datetime
+import pytz
 import requests
 import os
 import billboard
@@ -57,10 +58,13 @@ def get_response(return_list,intents_json,text):
         tag=return_list[0]['intent']
     if tag=='datetime':
         x=''
-        x+= str(time.strftime("%A"))+' '
-        x+= str(time.strftime("%d %B %Y"))+' '
-        x+=  str(time.strftime("%H:%M:%S"))
+        tz = pytz.timezone('Asia/Kolkata')
+        dt=datetime.now(tz)
+        x+=str(dt.strftime("%A"))+' '
+        x+=str(dt.strftime("%d %B %Y"))+' '
+        x+=str(dt.strftime("%H:%M:%S"))
         return x,'datetime'
+
 
 
     if tag=='weather':
