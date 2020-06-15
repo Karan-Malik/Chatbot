@@ -233,6 +233,10 @@
       event.preventDefault();
 
       const msgText = msgerInput.value;
+	temp=msgText.split(':')
+      if((temp[0].toLowerCase()).trim()=='google')
+      {search='https://www.google.com/search?q=' + temp[1].trim()
+      window.open(search)}
       if (!msgText) return;
 
       appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
