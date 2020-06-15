@@ -3,18 +3,13 @@ from flask import Flask
 from chatbotconfig import Config
 
 app=Flask(__name__)
-app.config.from_object  (Config)
+app.config.from_object(Config)
 
 import keras
 import nltk
 import pickle
 import json
-import numpy as np
-from keras.models import Sequential,load_model
-from keras.layers import Dense,Dropout,Activation
-import random
-import keyboard
-import datetime
+from keras.models import load_model
 
 from nltk.stem import WordNetLemmatizer
 lemmatizer=WordNetLemmatizer()

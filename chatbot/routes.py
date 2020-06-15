@@ -19,18 +19,13 @@ def home():
 def chatbot():
     #form=chatbotform()
     #if form.validate_on_submit():
-    import keras
     import nltk
     import pickle
     import json
     import numpy as np
     from keras.models import Sequential,load_model
-    from keras.layers import Dense,Dropout,Activation
     import random
-    import keyboard
     import datetime
-    from googlesearch import search
-    import webbrowser
     import requests
     import os
     import billboard
@@ -83,7 +78,7 @@ def chatbot():
             x+=  str(time.strftime("%H:%M:%S"))
             return x,'datetime'
 
-     
+
         if tag=='weather':
             x=''
             api_key='987f44e8c16780be8c85e25a409ed07b'
