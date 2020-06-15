@@ -1,7 +1,6 @@
 import flask
 from flask import Flask
 from chatbotconfig import Config
-from shelljob import proc
 
 app=Flask(__name__)
 app.config.from_object  (Config)
