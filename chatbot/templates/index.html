@@ -218,6 +218,11 @@
   <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
   <script>
 
+  function play() {
+  var audio = new Audio('Handbell-ringing-sound-effect.mp3');
+  audio.play();
+  }
+
     const msgerForm = get(".msger-inputarea");
     const msgerInput = get(".msger-input");
     const msgerChat = get(".msger-chat");
@@ -238,6 +243,10 @@
       {search='https://www.google.com/search?q=' + temp[1].trim()
       window.open(search)}
       if (!msgText) return;
+      if((temp[0].toLowerCase()).trim()=='set a timer')
+      {
+      play()}
+
 
       appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
       msgerInput.value = "";

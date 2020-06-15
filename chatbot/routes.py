@@ -114,11 +114,11 @@ def get_response(return_list,intents_json,text):
         return x,'songs'
 
     if tag=='timer':
-        mixer.init()
+        #mixer.init()
         x=text.split(':')[1].strip()
         time.sleep(float(x)*60)
-        mixer.music.load('Handbell-ringing-sound-effect.mp3')
-        mixer.music.play()
+        #mixer.music.load('Handbell-ringing-sound-effect.mp3')
+        #mixer.music.play()
         x='Timer ringing...'
         return x,'timer'
 
