@@ -83,12 +83,7 @@ def chatbot():
             x+=  str(time.strftime("%H:%M:%S"))
             return x,'datetime'
 
-        if tag=='google':
-            # query=input('Enter query...')
-            query=text.split(':')[1].strip()
-            chrome_path = r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %s'
-            for url in search(query, tld="co.in", num=1, stop = 1, pause = 2):
-                webbrowser.open("https://google.com/search?q=%s" % query)
+     
         if tag=='weather':
             x=''
             api_key='987f44e8c16780be8c85e25a409ed07b'
