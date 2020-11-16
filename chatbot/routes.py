@@ -167,7 +167,7 @@ def response(text):
 
 @app.route('/',methods=['GET','POST'])
 #@app.route('/home',methods=['GET','POST'])
-def home2():
+def yo():
     return render_template('main.html')
 
 @app.route('/chat',methods=['GET','POST'])
