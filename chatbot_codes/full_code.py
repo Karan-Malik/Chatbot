@@ -1,4 +1,5 @@
 
+#importing libraries
 import keras
 import nltk
 import pickle
@@ -21,6 +22,7 @@ import COVID19Py
 from nltk.stem import WordNetLemmatizer
 lemmatizer=WordNetLemmatizer()
 
+#Preprocessing the data
 words=[]
 classes=[]
 documents=[]
@@ -68,7 +70,7 @@ training=np.array(training)
 X_train=list(training[:,0])
 y_train=list(training[:,1])  
 
-#Model
+# Creating Model Architecture 
 model=Sequential()
 model.add(Dense(128,activation='relu',input_shape=(len(X_train[0]),)))
 model.add(Dropout(0.5))
@@ -77,12 +79,14 @@ model.add(Dense(64,activation='relu'))
 model.add(Dropout(0.5))
 model.add(Dense(len(y_train[0]),activation='softmax'))
 
+#Compiling and training the model
 adam=keras.optimizers.Adam(0.001)
 model.compile(optimizer=adam,loss='categorical_crossentropy',metrics=['accuracy'])
 #model.fit(np.array(X_train),np.array(y_train),epochs=200,batch_size=10,verbose=1)
 weights=model.fit(np.array(X_train),np.array(y_train),epochs=200,batch_size=10,verbose=1)    
-model.save('mymodel.h5',weights)
+model.save('mymodel.h5',weights) #Saving the trained weights
 
+#Loading the model and other data
 from keras.models import load_model
 model = load_model('mymodel.h5')
 intents = json.loads(open('intents.json').read())
@@ -118,6 +122,7 @@ def predict_class(sentence,model):
         return_list.append({'intent':classes[result[0]],'prob':str(result[1])})
     return return_list
 
+# Choose a response corresponding to the selected category
 def get_response(return_list,intents_json):
     
     if len(return_list)==0:
