@@ -37,7 +37,7 @@ To run it locally on your system, follow these steps:
 1. Clone this repository onto your system. On Command Prompt, run the following command:
 
 ```
-git clone https://github.com/Karan-Malik/Chatbot
+git clone https://github.com/Karan-Malik/Chatbot.git
 ```
 2. Change your directory to Chatbot:
 ```
