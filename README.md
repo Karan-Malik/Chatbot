@@ -1,7 +1,5 @@
 # Ted, The Deep-Learning Chatbot
 
-### Project website: [https://ted-the-deep-learning-bot.herokuapp.com/](https://ted-the-deep-learning-bot.herokuapp.com/)
-
 ## About this Project
 Ted is a multipurpose chatbot made using Python3, who can chat with you and help in performing daily tasks. It uses NLP and Deep-Learning to analyse the user's message, classify it into the a broader category and then reply with a suitable message or the required information. It is hosted using flask and is available on heroku at the link specified above. 
 
