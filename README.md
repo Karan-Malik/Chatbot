@@ -8,10 +8,6 @@ Home Page:
 
 ![image](https://raw.githubusercontent.com/Karan-Malik/Chatbot/master/UI/main_screen.PNG?token=AKGUW5C2TMM37OQE5FSPXLS66D55O)
 
-Chat Screen:
-
-![image](https://raw.githubusercontent.com/Karan-Malik/Chatbot/master/UI/chat_screen.PNG?token=
-
 To run it locally on your system, follow these steps:
 1. Clone this repository onto your system. On Command Prompt, run the following command:
 
