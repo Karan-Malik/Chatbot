@@ -3,7 +3,7 @@ Flask==1.1.2
 flask_wtf
 numpy==1.18.2
 pandas==1.0.3
-nltk==3.4.5
+nltk==3.6.6
 Keras==2.3.1
 requests==2.23.0
 pygame==1.9.6
