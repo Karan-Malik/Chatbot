@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chat with {{config.bot}}</title>
+  <link rel="icon" href="https://img.icons8.com/fluency-systems-regular/48/bot--v1.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body onload="['Oi, eu sou o {{ config.bot }}!', 'Digite abaixo para falar comigo...'].forEach(msg => {
+            appendMessage({text: msg}); });">
+  <section class="msger">
+    <header class="msger-header">{{ config.bot }}</header>
+    <main class="msger-chat"></main>
+    <form class="msger-inputarea" action="" method="post">
+      <input type="text" class="msger-input" id="textInput" tabindex="0"
+        placeholder="Digite sua mensagem ou 'Ajuda' para conhecer minhas funcionalidades...">
+      <button type="submit" class="msger-send-btn" disabled>Enviar</button>
+    </form>
+  </section>
+  <script src="{{ url_for('static', filename='js/main.js') }}" onload="setConfig({{config}})"></script>
+  <p style="position: fixed;bottom: 0;font-size: 14px;text-align: center;">
+    Criado por <a target='_blank' href="{{ config.homepage }}">{{ config.constructor }}</a>,Copyright &copy; {{
+    config.age }}<br>
+    Github do projeto: <a target="_blank" href="https://github.com/thiagootuler/chatbot">chatbot</a>
+  </p>
+</body>
+
+</html>

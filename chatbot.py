@@ -1,1 +1,1 @@
-from chatbot import app
+from src import app

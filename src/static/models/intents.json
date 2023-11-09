@@ -1,0 +1,277 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Olá",
+                "Como vai você",
+                "Tem alguém aí?",
+                "Oi",
+                "Ei",
+                "Olá",
+                "Bom dia"
+            ],
+            "responses": [
+                "Olá",
+                "Bom te ver de novo",
+                "Olá, como posso ajudar?"
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "E aí",
+                "Como vai você?",
+                "Como você está?"
+            ],
+            "responses": [
+                "Tudo bem! E com você?"
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "Estou bem"
+            ],
+            "responses": [
+                "Bom saber!"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Tchau",
+                "Até mais",
+                "Adeus",
+                "Até a próxima"
+            ],
+            "responses": [
+                "Tchau! Volte logo.",
+                "Até a próxima",
+                "Até mais"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "Foi legal conversar com você",
+                "Boa conversa"
+            ],
+            "responses": [
+                "Foi bom conversar com você também! Volte logo!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Obrigado",
+                "Isso é útil",
+                "Incrível, obrigado",
+                "Obrigado por me ajudar"
+            ],
+            "responses": [
+                "Fico contente em ajudar!",
+                "A qualquer momento!",
+                "O prazer é meu"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Incrível",
+                "Ótimo",
+                "Eu sei",
+                "OK",
+                "Sim",
+                "Boa"
+            ],
+            "responses": [
+                "Ótimo!",
+                "Incrível!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "não"
+            ],
+            "responses": [
+                "OK"
+            ]
+        },
+        {
+            "tag": "hahaha",
+            "patterns": [
+                "hahaha",
+                "kkkkkk",
+                "kakaka",
+                "rsrsrs",
+                "rindo muito",
+                "engraçado"
+            ],
+            "responses": [
+                "Que bom que pude fazer você rir!"
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "Você é incrível",
+                "Você é o melhor",
+                "Você é ótimo",
+                "você é bom"
+            ],
+            "responses": [
+                "Obrigado!"
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "O que você está fazendo?"
+            ],
+            "responses": [
+                "Falando com você, é claro!"
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Desculpe, não consigo entender você",
+                "Por favor, me dê mais informações",
+                "Não tenho certeza se entendi"
+            ]
+        },
+        {
+            "tag": "blacklist",
+            "patterns": [
+                "você é idiota",
+                "cale-se",
+                "idiota"
+            ],
+            "responses": [
+                "Opa... Isso está fora do meu vocabulário :/"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Quem é você?",
+                "Qual é seu nome?"
+            ],
+            "responses": [
+                "Eu sou BOT, um chatbot com recursos de Inteligencia Artificial"
+            ]
+        },
+        {
+            "tag": "constructor",
+            "patterns": [
+                "Quem fez você?",
+                "Quem projetou você?",
+                "Quem te criou?",
+                "Quem te programou?"
+            ],
+            "responses": [
+                "Sou um chatbot projetado por CONSTRUCTOR"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "Quantos anos você tem?",
+                "Quando você foi criado?",
+                "Qual é a sua idade?"
+            ],
+            "responses": [
+                "Fui construido em AGE, se é isso que você está perguntando!"
+            ]
+        },
+        {
+            "tag": "homepage",
+            "patterns": [
+                "Quem é?",
+                "O que faz?",
+                "Quem é CONSTRUCTOR",
+                "CONSTRUCTOR"
+            ],
+            "responses": [
+                "Você pode saber mais em HOMEPAGE"
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contatar desenvolvedor",
+                "entre em contato com CONSTRUCTOR",
+                "entre em contato com o programador",
+                "contatar criador"
+            ],
+            "responses": [
+                "Entrar em contato através de CONTACT"
+            ]
+        },
+        {
+            "tag": "suggest",
+            "patterns": [
+                "você é inútil",
+                "inútil",
+                "sugerir",
+                "sugestões",
+                "você é mau"
+            ],
+            "responses": [
+                "Por favor, envie suas sugestões para CONTACT. Obrigado por me ajudar a melhorar!"
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "Como você poderia me ajudar?",
+                "O que você pode fazer?",
+                "Que ajuda você fornece?",
+                "Como você pode ser útil?",
+                "Que suporte é oferecido",
+                "Ajuda"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "timer",
+            "patterns": [
+                "Definir cronômetro",
+                "Definir temporizador"
+            ],
+            "responses": [
+                "..."
+            ],
+            "context": "Definir cronômetro"
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "Temperatura",
+                "Clima",
+                "Vai chover?",
+                "Informar temperatura"
+            ],
+            "responses": [
+                "..."
+            ],
+            "context": "Informar temperatura"
+        },
+        {
+            "tag": "search",
+            "patterns": [
+                "Google",
+                "Pesquisar"
+            ],
+            "responses": [
+                "..."
+            ],
+            "context": "Pesquisar"
+        }
+    ]
+}

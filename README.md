@@ -1,38 +1,38 @@
-# Ted, The Deep-Learning Chatbot
+# BOT, The Deep-Learning Chatbot
 
 ## About this Project
-Ted is a multipurpose chatbot made using Python3, who can chat with you and help in performing daily tasks. It uses NLP and Deep-Learning to analyse the user's message, classify it into the a broader category and then reply with a suitable message or the required information. It is hosted using flask and is available on heroku at the link specified above. 
-
+Chatbot with predefined resources made in Python3, which can chat with you and perform some example tasks. It uses NLP to analyze the user's message, classify it into a category and then respond with a suitable message or necessary information. It is hosted on flask and is available on heroku at the link specified above.
 ## Project UI
 Home Page:
 
-![image](https://raw.githubusercontent.com/Karan-Malik/Chatbot/master/UI/main_screen.PNG?token=AKGUW5C2TMM37OQE5FSPXLS66D55O)
+![image](https://raw.githubusercontent.com/thiagootuler/chatbot/master/UI/chat_screen.PNG)
 
 To run it locally on your system, follow these steps:
 1. Clone this repository onto your system. On Command Prompt, run the following command:
+```
+git clone https://github.com/thiagootuler/chatbot.git
+```
+2. Go to the project directory and configure a virtual environment if you prefer.
+3. Make sure you have all the required libraries listed in requirements.txt. In case any of the libraries are missing, install them using pip. Type this command into your Command Prompt:
+```
+pip install -r requirements.txt 
+```
+4. Additionally, install the dependencies used by the nltk library (nltk_requirements.txt), running the nltk_config.py script:
+```
+python3 nltk_config.py
+```
+5. Then, create an environment variables file (.env) based on the example file left and run the following commands to start the application:
+```
+python3 chatbot.py
+```
+6. Enter the url provided after running the previous commands into your web browser
 
+BOT is now ready to chat!
+
+NOTE: If the intentions file is changed, it is recommended to retrain the model. To do so, run the following command:
 ```
-git clone https://github.com/Karan-Malik/Chatbot.git
-```
-2. Change your directory to Chatbot:
-```
-cd Chatbot
-```
-3. Make sure you have all the required libraries listed in requirements.txt. In case any of the libraries are missing, install them using pip. Type this command into your Command Prompt, replacing 'Your-library-name' by the required library name:
-```
-pip install Your-library-name 
-```
-4. Then run the follwing commands to run the application:
-```
-set FLASK_APP=chatbot.py
-flask run
+cd src/static/models && python3 training.py
 ```
 
-5. Enter the url provided after running the previous commands into your web browser
-
-Ted is now ready to chat!
-
-#### I would like to thank [Ashutosh Varma](https://github.com/ashutoshvarma) and [Manorit Chawdhry](https://github.com/manorit2001) for their help and contribution to this project. Do check out their Github accounts!
-
-##### Copyright (c) 2020 Karan-Malik
+##### Copyright (c) 2023 Thiago Tuler
 
