@@ -34,5 +34,10 @@ NOTE: If the intentions file is changed, it is recommended to retrain the model.
 cd src/static/models && python3 training.py
 ```
 
+### Other references
+- https://datamahadev.com/building-a-chatbot-in-python/
+- https://www.techwithtim.net/tutorials/ai-chatbot/part-1
+- 
+
 ##### Copyright (c) 2023 Thiago Tuler
 

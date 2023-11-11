@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-class Config(object):
+class Config:
     basedir = os.path.dirname(os.path.dirname(__file__))
     weather_url = os.environ.get('WEATHER_URL')
     weather_key = os.environ.get('WEATHER_KEY')
